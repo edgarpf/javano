@@ -4,6 +4,7 @@
 .project
 .classpath
 .settings/
+bin/
 
 # Log file
 *.log
