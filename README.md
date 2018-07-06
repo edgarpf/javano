@@ -2,7 +2,7 @@
 
 <div align="center">
   <div>
-		<img width="500" src="media/java.png" alt="Javano">
+		<img width="500" src="media/javano.png" alt="Javano">
 	</div>
 </div>
 
