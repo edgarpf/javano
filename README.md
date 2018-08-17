@@ -12,7 +12,7 @@ Use maven dependency
 
 ```xml
 <dependency>
-	    <groupId>com.github.edgarpfr</groupId>
+	    <groupId>com.github.edgarpf</groupId>
 	    <artifactId>javano</artifactId>
 	    <version>master-SNAPSHOT</version>
 </dependency>
