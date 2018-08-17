@@ -8,7 +8,7 @@ Launched in 2015 by Colin LeMahieu as RaiBlocks, Nano is a low-latency payment p
 
 ## How to use
 
-Use maven dependency
+Use maven dependency:
 
 ```xml
 <dependency>
