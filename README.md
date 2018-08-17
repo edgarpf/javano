@@ -6,7 +6,7 @@ A Java library for Nano RPC protocol.
 
 Launched in 2015 by Colin LeMahieu as RaiBlocks, Nano is a low-latency payment platform that requires minimal resources, making Nano ideal for peer-to-peer transactions. It has instant transactions, no fees and infinite scalability. It is also environmentally friendly.
 
-##How to use
+## How to use
 
 Use maven dependency
 
