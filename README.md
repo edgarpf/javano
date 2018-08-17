@@ -8,7 +8,7 @@ Launched in 2015 by Colin LeMahieu as RaiBlocks, Nano is a low-latency payment p
 
 ## How to use with Maven
 
-Use Maven repository:
+Add in your pom.xml the following repository:
 
 ```xml
 <repositories>
