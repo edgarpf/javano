@@ -19,7 +19,7 @@ Add in your pom.xml the following repository:
 </repositories>
 ```
 
-And dependency:
+And the following dependency:
 
 ```xml
 <dependency>
