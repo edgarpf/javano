@@ -10,9 +10,15 @@ import lombok.Setter;
 @Setter
 public class AccountCreateRequest extends ActionRequest {
 	private String wallet;
-	
+	private Boolean work;
+
 	public AccountCreateRequest(String wallet) {
-	  action = Action.ACCOUNT_CREATE;
-	  this.wallet = wallet;
+		action = Action.ACCOUNT_CREATE;
+		this.wallet = wallet;
+	}
+
+	public AccountCreateRequest(String wallet, Boolean work) {
+		this(wallet);
+		this.work = work;
 	}
 }

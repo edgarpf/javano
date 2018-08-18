@@ -12,11 +12,17 @@ public class AccountRepresentativeSetRequest extends ActionRequest {
 	private String wallet;
 	private String account;
 	private String representative;
+	private Boolean work;
 	
 	public AccountRepresentativeSetRequest(String wallet, String account, String representative) {
 	  action = Action.ACCOUNT_REPRESENTATIVE_SET;
 	  this.wallet = wallet;
 	  this.account = account;
 	  this.representative = representative;
+	}
+	
+	public AccountRepresentativeSetRequest(String wallet, String account, String representative, Boolean work) {
+		  this(wallet, account, representative);
+		  this.work = work;
 	}
 }
