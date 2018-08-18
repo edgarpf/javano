@@ -5,7 +5,9 @@ import java.io.IOException;
 import com.github.kevinsawicki.http.HttpRequest;
 import com.google.gson.Gson;
 import com.javano.request.accounts.AccountBalanceRequest;
+import com.javano.request.accounts.AccountInfoRequest;
 import com.javano.response.accounts.AccountBalanceResponse;
+import com.javano.response.accounts.AccountInfoResponse;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -26,7 +28,11 @@ public class NanoClient {
 		gson = new Gson();
 	}
 	
-	public AccountBalanceResponse getAccounBalance(String account) throws IOException {
+	public AccountBalanceResponse getAccountBalance(String account) throws IOException {
 		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountBalanceRequest(account))).body(), AccountBalanceResponse.class);
+	}
+	
+	public AccountInfoResponse getAccountInfo(String account) throws IOException {
+		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountInfoRequest(account))).body(), AccountInfoResponse.class);
 	}
 }
