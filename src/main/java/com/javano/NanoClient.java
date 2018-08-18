@@ -32,7 +32,7 @@ public class NanoClient {
 		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountBalanceRequest(account))).body(), AccountBalanceResponse.class);
 	}
 	
-	public AccountInfoResponse getAccountInfo(String account) throws IOException {
-		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountInfoRequest(account, null, null, null))).body(), AccountInfoResponse.class);
+	public AccountInfoResponse getAccountInfo(String account, Boolean representative, Boolean weight, Boolean pending) throws IOException {
+		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountInfoRequest(account, representative, weight, pending))).body(), AccountInfoResponse.class);
 	}
 }
