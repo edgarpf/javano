@@ -18,5 +18,6 @@ public class AccountInfoResponse {
    private String balance;
    @SerializedName("modified_timestamp")
    private String modifiedTimestamp;
+   @SerializedName("block_count")
    private String blockCount;
 }
