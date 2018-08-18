@@ -33,6 +33,6 @@ public class NanoClient {
 	}
 	
 	public AccountInfoResponse getAccountInfo(String account) throws IOException {
-		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountInfoRequest(account))).body(), AccountInfoResponse.class);
+		return gson.fromJson(HttpRequest.post(address).send(gson.toJson(new AccountInfoRequest(account, null, null, null))).body(), AccountInfoResponse.class);
 	}
 }

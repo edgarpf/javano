@@ -1,20 +1,18 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountHistoryRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountHistoryRequest {
 	private String account;
 	private String count;
-	
-	public AccountHistoryRequest(String account, String count) {
-	  action = Action.ACCOUNT_HISTORY;
-	  this.account = account;
-	  this.count = count;
-	}
+	private final String action = Action.ACCOUNT_HISTORY;
 }

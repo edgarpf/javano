@@ -1,18 +1,17 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class ValidateAccountNumberRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class ValidateAccountNumberRequest {
 	private String account;
-	
-	public ValidateAccountNumberRequest(String account) {
-	  action = Action.VALIDATE_ACOUNT_NUMBER;
-	  this.account = account;
-	}
+	private final String action = Action.VALIDATE_ACOUNT_NUMBER;
 }

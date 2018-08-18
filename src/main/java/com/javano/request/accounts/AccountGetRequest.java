@@ -1,18 +1,17 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountGetRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountGetRequest {
 	private String key;
-	
-	public AccountGetRequest(String key) {
-	  action = Action.ACCOUNT_GET;
-	  this.key = key;
-	}
+	private final String action = Action.ACCOUNT_GET;
 }

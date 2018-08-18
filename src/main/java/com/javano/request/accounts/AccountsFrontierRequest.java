@@ -1,18 +1,17 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountsFrontierRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountsFrontierRequest {
 	private String[] accounts;
-	
-	public AccountsFrontierRequest(String[] accounts) {
-	  action = Action.ACCOUNTS_FRONTIER;
-	  this.accounts = accounts;
-	}
+	private final String action = Action.ACCOUNTS_FRONTIER;
 }

@@ -1,32 +1,20 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountsPendingRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountsPendingRequest {
 	private String[] accounts;
 	private String count;
 	private String threshold;
 	private Boolean source;
-	
-	public AccountsPendingRequest(String[] accounts, String count) {
-		action = Action.ACCOUNTS_PENDING;
-		this.accounts = accounts;
-		this.count = count;
-	}
-
-	public AccountsPendingRequest(String[] accounts, String count, String threshold) {
-		this(accounts, count);
-		this.threshold = threshold;
-	}
-	
-	public AccountsPendingRequest(String[] accounts, String count, Boolean source) {
-		this(accounts, count);
-		this.source = source;
-	}
+	private final String action = Action.ACCOUNTS_PENDING;
 }

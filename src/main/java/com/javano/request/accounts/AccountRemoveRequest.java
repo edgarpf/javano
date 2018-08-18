@@ -1,20 +1,18 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountRemoveRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountRemoveRequest {
 	private String wallet;
 	private String account;
-	
-	public AccountRemoveRequest(String wallet, String account) {
-	  action = Action.ACCOUNT_REMOVE;
-	  this.wallet = wallet;
-	  this.account = account;
-	}
+	private final String action = Action.ACCOUNT_REMOVE;
 }

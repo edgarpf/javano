@@ -1,22 +1,19 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountMoveRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountMoveRequest {
 	private String wallet;
 	private String source;
 	private String[] accounts;
-	
-	public AccountMoveRequest(String wallet, String source, String[] accounts) {
-	  action = Action.ACCOUNT_MOVE;
-	  this.wallet = wallet;
-	  this.source = source;
-	  this.accounts = accounts;
-	}
+	private String action = Action.ACCOUNT_MOVE;
 }

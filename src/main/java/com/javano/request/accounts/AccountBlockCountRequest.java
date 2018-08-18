@@ -1,18 +1,17 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountBlockCountRequest extends ActionRequest {
-private String account;
-	
-	public AccountBlockCountRequest(String account) {
-	  action = Action.BLOCK_COUNT;
-	  this.account = account;
-	}
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountBlockCountRequest {
+    private String account;
+    private final String action = Action.BLOCK_COUNT;
 }

@@ -1,28 +1,20 @@
 package com.javano.request.accounts;
 
-import com.javano.request.ActionRequest;
 import com.javano.util.Action;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AccountRepresentativeSetRequest extends ActionRequest {
+@AllArgsConstructor
+@NoArgsConstructor
+public class AccountRepresentativeSetRequest {
 	private String wallet;
 	private String account;
 	private String representative;
 	private Boolean work;
-	
-	public AccountRepresentativeSetRequest(String wallet, String account, String representative) {
-	  action = Action.ACCOUNT_REPRESENTATIVE_SET;
-	  this.wallet = wallet;
-	  this.account = account;
-	  this.representative = representative;
-	}
-	
-	public AccountRepresentativeSetRequest(String wallet, String account, String representative, Boolean work) {
-		  this(wallet, account, representative);
-		  this.work = work;
-	}
+	private final String action = Action.ACCOUNT_REPRESENTATIVE_SET;
 }
