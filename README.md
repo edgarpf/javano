@@ -1,4 +1,4 @@
-# Javano [![Build Status](https://api.travis-ci.org/edgarpf/gastos-deputados-federais.svg?branch=master)][![Maintainability](https://api.codeclimate.com/v1/badges/7150b2be47db9d893f5d/maintainability)](https://codeclimate.com/github/edgarpf/gastos-deputados-federais/maintainability)
+# Javano [![Build Status](https://travis-ci.org/edgarpf/javano.svg?branch=master)](https://travis-ci.org/edgarpf/javano) [![Coverage Status](https://coveralls.io/repos/github/edgarpf/javano/badge.svg?branch=master)](https://coveralls.io/github/edgarpf/javano?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/7150b2be47db9d893f5d/maintainability)](https://codeclimate.com/github/edgarpf/javano/maintainability)
 
 A Java library for Nano RPC protocol.
 
